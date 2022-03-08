@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form contact</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+
+    <!--navbar-->
+    <nav>
+        <div class="left-side">
+            <img src="assets/img/logo.png" alt="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">My Project</a></li>
+            </ul>
+        </div>
+
+        <div class="right-side">
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+    <!--navbar-->
+
+    <!--contact-->
+    <div class="judul">
+        <h1>GET IN TOUCH</h1> 
+    </div>
+
+    <div class="contact">
+        <form action="">
+
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+
+            <div>
+                <label for="Email">Email</label>
+                <input type="email" id="email">
+            </div>
+
+            <div>
+                <label for="Phone_number">Phone Number</label>
+                <input type="text" id="phone_number">
+            </div>
+
+            <div>
+                <label for="">Subject</label>
+                <select name="" id="subject">
+                    <option hidden value=""></option>
+                    <option value="let's talk">Let's talk</option>
+                    <option value="Let's collab">Let's collab</option>
+                    <option value="let's meet">let's meet</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="message">Your message</label>
+                <textarea name="" id="message"></textarea>
+            </div>
+
+            <div>
+                <button type="button" onclick="myFunction()">Submit</button>
+            </div>
+
+        </form>  
+    </div>
+    <!--contact-->
+
+    <script src="contactme.js"></script>
+</body>
+</html>

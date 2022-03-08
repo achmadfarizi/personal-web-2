@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <title>Creating Blog Page</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+   
+    <!--navbar-->
+    <nav>
+        <div class="left-side">
+            <img src="assets/img/logo.png" alt="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">My Project</a></li>
+            </ul>
+        </div>
+
+        <div class="right-side">
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+    <!--navbar-->
+
+    <div class="blog-form">
+        <form onsubmit="addBlog(event)">
+            <h2>ADD MY PROJECT</h2>
+
+            <div class="item1">
+                <div>
+                    <label for="input-blog-project-name">Project Name</label>
+                    <input id="input-blog-projectname" />
+                </div>
+
+                <div class="date">
+                    <div class="date1">
+                        <label for="input-blog-start-date">Start Date</label>
+                        <input type="date" id="input-blog-startdate">
+                    </div>
+                    <div>
+                        <label for="input-blog-end-date">End Date</label>
+                        <input type="date" id="input-blog-enddate">
+                    </div>
+                </div>
+
+                <div>
+                <label for="input-blog-content">Description</label>
+                <textarea id="input-blog-content"></textarea>
+                </div>
+            </div>
+
+            <div class="item2">
+              <p>Technologies</p>
+              <div class="check-box">
+                <div>
+                  <div>
+                    <input type="checkbox" class="tech" id="tech" value="fab fa-google-play ">
+                    <label for="">Node Js</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" class="tech" id="tech" value="fas fa-desktop">
+                    <label for="">React Js</label>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <input type="checkbox" class="tech" id="tech" value="fas fa-biohazard">
+                    <label for="">Next Js</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" class="tech" id="tech" value="fab fa-react">
+                    <label for="">TypeScript</label>
+                  </div>
+                </div>
+              </div> 
+            </div>
+
+            <div class="box">
+              <label>Upload Image</label>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  <p>choose</p>
+                  <img src="assets/img/file.png" alt="file" />
+                </label>
+                <input type="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+
+            <div class="button-group">
+              <button>Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="blog-card">
+      <div class="judul"><h3>MY PROJECT</h3></div>
+      <div id="contents" class="blog-list">
+        <!-- dynamic content would be here -->
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="assets/img/img4.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <h3>
+              <a href="blog-detail.html" target="_blank"
+                >Dumbways Mobile App-2022</a>
+            </h3>
+            <div class="detail-blog-content">
+              durasi : 1 bulan
+            </div>
+            <div class="description">
+            <p>
+              Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+              menjadi isu yang belum terpecahkan.
+            </p>
+            </div>
+            <div class="blog-logo-content">
+              <a href="" style="color: black;"><i class="fab fa-google-play"></i></a>
+              <a href="" style="color: black;"><i class="fas fa-desktop"></i></a>
+              <a href="" style="color: black;"><i class="fas fa-biohazard"></i></a>
+              <a href="" style="color: black;"><i class="fab fa-react"></i></a>
+            </div>
+            <div class="btn-group">
+              <button class="btn-edit">Edit</button>
+              <button class="btn-post">Delete</button>
+            </div>
+          </div>
+        </div>
+        
+      </div> 
+    </div>
+    <script src="blog.js"></script>
+  </body>
+</html>

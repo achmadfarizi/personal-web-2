@@ -1,0 +1,463 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(235, 235, 235);
+}
+
+
+/*styling navbar*/
+
+nav{
+    display: flex;
+    height: 7vh;
+    padding-left: 90px;
+    padding-right: 90px;
+    background-color: rgb(221, 221, 221);
+}
+
+nav div{
+    display: flex;
+}
+
+/*sisi kiri*/
+
+nav .left-side{
+    flex: 75%;
+    align-items: center;
+}
+
+
+nav .left-side ul{
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+nav .left-side ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+nav .left-side ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*sisi kiri*/
+
+nav .right-side{
+    flex: 25%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .right-side a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    width: 100px;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/*end styling navbar*/
+
+
+/*start styling index content home*/
+.container-main {
+    display: flex;
+    height: 93vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-content {
+    width: 80%;
+    padding: 30px;
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+}
+
+.container-main .container-content .left-side{
+    flex: 70%;
+    padding-right: 60px;
+    padding-left: 40px;
+}
+
+.container-main .container-content .left-side h1{
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+
+.container-main .container-content .left-side p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.container-main .container-content .left-side .item1 a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+}
+
+.container-main .container-content .left-side .item1 .btn-contact{
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 8px;
+}
+
+.container-main .container-content .left-side .icon{
+    margin-top: 40px;
+}
+
+.container-main .container-content .left-side .icon img{
+    width: 30px;
+    margin-right: 20px;
+}
+
+/*styling card*/
+
+.container-main .container-content .right-side{
+    flex: 30%;
+}
+
+.card .content{
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+    border-radius: 8px;
+    
+}
+
+.card .content img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.card .content p{
+    font-size: 11px;
+    padding-bottom: 15px;
+}
+
+/*end styling index content home*/
+
+
+/*start styling contact me*/
+
+.judul h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact form{
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.contact form label{
+    font-weight: 600;
+}
+
+.contact form input, select{
+    padding: 5px 0;
+}
+
+.contact form textarea{
+    height: 100px;
+    resize: vertical;
+}
+
+.contact form input, select, textarea{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+}
+
+.contact form button{
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    padding: 5px 20px;
+    border-radius: 8px;
+    border: none;
+    float: right;
+    cursor: pointer;
+}
+/*end styling contact me*/
+
+
+
+/*styling blog*/
+
+/*styling blog-form*/
+.blog-form form{
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.blog-form form h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blog-form form label{
+    font-weight: 600;
+}
+
+.blog-form form .date{
+    display: flex;
+}
+
+.blog-form form .date .date1{
+    margin-right: 10px;
+}
+
+.blog-form form .date div{
+    flex: 50%;
+}
+
+.blog-form form .item1 input, textarea{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+}
+
+.blog-form form .item1 input{
+    padding: 5px;
+}
+
+.blog-form form .item1 textarea{
+    height: 100px;
+    resize: vertical;
+}
+
+.blog-form form .item2 p{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.blog-form form .item2 .check-box{
+    display: flex;
+    margin: 10px 0;
+}
+
+.blog-form form .item2 .check-box div{
+    flex: 50%;
+}
+
+.blog-form form .item2 .check-box input{
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.blog-form form .input-blog-image-group {
+    width: 97%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+  }
+  
+  .blog-form form .input-blog-image-group label p {
+    font-size: 15px;
+  }
+
+  .blog-form form .input-blog-image-group label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .blog-form form .button-group {
+    text-align: right;
+  }
+  
+  .blog-form form button {
+    width: 100px;
+    padding: 8px 20px;
+    font-size: 15px;
+    background: black;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 40px;
+  }
+/*styling blog-form*/
+/*styling blog-card*/
+
+.blog-card{
+    background-color: rgb(247, 247, 247);
+}
+
+.blog-card .judul h3{
+    text-align: center;
+    font-size: 30px;
+    padding: 40px 0 40px 0;
+}
+
+.blog-card .blog-list{
+    margin: 0 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    row-gap: 20px;
+}
+
+.blog-card .blog-list-item{
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+}
+
+.blog-card .blog-list-item .blog-image img{
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.blog-card .blog-list-item .blog-content h3{
+    margin: 9px 0 2px 0;
+}
+
+.blog-card .blog-list-item .blog-content a{
+    text-decoration: none;
+    color: black;
+}
+
+.blog-card .blog-list-item .description{
+    height: 87px;
+}
+
+.blog-card .blog-list-item p{
+    text-align: justify;
+    margin: 20px 0 15px 0;
+}
+
+.blog-card .blog-list-item .blog-logo-content{
+    margin-bottom: 20px;
+}
+
+.blog-card .blog-list-item .blog-logo-content a{
+    margin-right: 10px;
+}
+
+.blog-card .blog-list-item .btn-group{
+    display: flex;
+}
+
+.blog-card .blog-list-item .btn-group .btn-edit{
+    margin-right: 6px;
+}
+
+.blog-card .blog-list-item .btn-group button{
+    flex: 50%;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+}
+
+
+/*styling blog detail*/
+
+  /* Blog Detail */
+.blog-detail { 
+    /* margin-top: 10px; */
+    width: 90% ;
+    margin: auto;
+}
+
+.blog-detail h1 { 
+    text-align: center;
+}
+.blog-detail .blog-detail-header { 
+    display: flex;
+    flex: 50% ;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.blog-detail-header .left { 
+    /* background-color: red; */
+    width: 60%;
+    margin-right: 20px ;
+}
+.left > img { 
+    width: 100%;
+}
+.blog-detail-header .right { 
+    /* background-color: purple; */
+    width: 30%;
+    margin-left: 20px ;
+    font-size: 15px;
+}
+.right i { 
+    font-size: 20px;
+    margin: 10px 0px 10px 0px;
+}
+
+.right i small{
+    font-size: small;
+}
+.right .right-top { 
+    margin-top: 20px;
+}
+.right-top h3 { 
+    margin-bottom: 10px;
+}
+.right-bottom { 
+    margin-top: 20px;
+    /* background-color: red; */
+}
+.right-bottom h3 { 
+    margin-bottom: 10px;
+}
+.right-bottom .right-bottom-wrap{ 
+    display: flex;
+    /* background-color: white; */
+    color: black;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.right-bottom-wrap > i{ 
+    width: 40%;
+    font-size: 22px;
+    word-spacing: 1rem;
+}
+
+.blog-detail-content { 
+    text-align: justify;
+}
